@@ -1,0 +1,24 @@
+{
+  "name": "restfull-blog-app-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OJ3rillz/RESTFull-Blog-App-.git"
+  },
+  "author": "Timilehin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OJ3rillz/RESTFull-Blog-App-/issues"
+  },
+  "homepage": "https://github.com/OJ3rillz/RESTFull-Blog-App-#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.15"
+  }
+}
