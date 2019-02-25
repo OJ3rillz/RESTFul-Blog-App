@@ -20,7 +20,10 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-//ROUTEFULL ROUTES
+//RESTFUL ROUTES
+app.get("/blogs", function(req, res){
+      res.render("index");
+})
 
 
 app.listen(3000, function(){
