@@ -68,7 +68,8 @@ app.get("/blogs/:id", function(req, res){
             } else {
                   res.render("show", {blog: foundBlog});
             }
-     
+      })
+      
 });
 
 app.listen(3000, function(){
