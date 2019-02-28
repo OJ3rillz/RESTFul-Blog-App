@@ -68,9 +68,25 @@ app.get("/blogs/:id", function(req, res){
             } else {
                   res.render("show", {blog: foundBlog});
             }
-      })
-      
+      })     
 });
+
+//EDIT ROUTE
+app.get("/blogs/:id/edit", function(req, res){
+      Blog.findById(req.params.id, function(err, foundBlog){
+          if(err){
+                res.redirect("/blogs");
+          } else {
+                res.render("edit", {blog: foundBlog})
+          }
+      });
+})
+
+//UPDATE ROUTE
+app.put("/blogs/:id", function(req, res){
+res.send("UPDATE ROUTE!");
+});
+
 
 app.listen(3000, function(){
       console.log("Server has started!");
